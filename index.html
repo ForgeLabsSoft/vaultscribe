@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vault Scribe</title>
+<meta name="description" content="Vault Scribe — a private, on-device vault and expiry reminder for your UK documents.">
+<style>
+  :root { --bg:#f7f8fa; --card:#fff; --ink:#1a1d21; --muted:#5a6472; --accent:#2f6fed; --line:#e6e9ee; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1216; --card:#171b21; --ink:#eef1f5; --muted:#9aa4b2; --accent:#6ea0ff; --line:#262c34; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; min-height:100vh; background:var(--bg); color:var(--ink);
+    font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display:grid; place-items:center; padding:24px;
+  }
+  .card {
+    max-width:460px; text-align:center; background:var(--card); border:1px solid var(--line);
+    border-radius:18px; padding:40px 32px;
+  }
+  .badge {
+    width:64px; height:64px; border-radius:16px; margin:0 auto 18px;
+    background:linear-gradient(150deg, var(--accent), #1b3f8f);
+    display:grid; place-items:center; color:#fff; font-size:34px;
+  }
+  h1 { margin:0 0 6px; font-size:1.6rem; letter-spacing:-0.02em; }
+  p { color:var(--muted); margin:0 0 24px; }
+  .links { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  a.btn {
+    display:inline-block; padding:11px 20px; border-radius:10px; text-decoration:none;
+    background:var(--accent); color:#fff; font-weight:600; font-size:0.95rem;
+  }
+  a.ghost { background:transparent; color:var(--accent); border:1px solid var(--line); }
+  footer { margin-top:22px; color:var(--muted); font-size:0.8rem; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge" aria-hidden="true">🔐</div>
+    <h1>Vault Scribe</h1>
+    <p>A private, on-device vault and expiry reminder for your UK documents — visa, eVisa, BRP, share code and passport.</p>
+    <div class="links">
+      <a class="btn ghost" href="privacy">Privacy Policy</a>
+      <a class="btn ghost" href="support">Support</a>
+    </div>
+    <footer>© 2026 ForgeLabsSoft</footer>
+  </div>
+</body>
+</html>
