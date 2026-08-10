@@ -1,6 +1,6 @@
-# Vault Scribe — public site
+# VaultMinder — public site
 
-The privacy policy, support page and landing for **Vault Scribe**, a private,
+The privacy policy, support page and landing for **VaultMinder**, a private,
 on-device vault and expiry reminder for UK documents (iOS).
 
 | Page | URL |
