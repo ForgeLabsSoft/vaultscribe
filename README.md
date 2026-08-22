@@ -1,6 +1,6 @@
-# VaultMinder — public site
+# ValuMinder — public site
 
-The privacy policy, support page and landing for **VaultMinder**, a private,
+The privacy policy, support page and landing for **ValuMinder**, a private,
 on-device vault and expiry reminder for UK documents (iOS).
 
 | Page | URL |
