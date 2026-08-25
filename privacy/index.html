@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ValuMinder — Privacy Policy</title>
-<meta name="description" content="ValuMinder processes your documents entirely on your iPhone. No accounts, no servers we can read, no analytics, no tracking.">
+<meta name="description" content="ValuMinder processes your documents entirely on your device. No accounts, no servers we can read, no analytics, no tracking.">
 <style>
   :root {
     --bg: #f7f8fa; --card: #ffffff; --ink: #1a1d21; --muted: #5a6472;
@@ -54,74 +54,122 @@
 <body>
 <div class="wrap">
   <header>
-    <div class="badge" aria-hidden="true">🔐</div>
-    <h1>ValuMinder — Privacy Policy</h1>
+    <div class="badge" aria-hidden="true">&#128274;</div>
+    <h1>ValuMinder &mdash; Privacy Policy</h1>
   </header>
-  <p class="updated">Last updated: 12 July 2026</p>
+  <p class="updated">Last updated: 25 August 2026</p>
 
   <p class="lede">
-    ValuMinder processes your documents <strong>entirely on your iPhone</strong>. There are
-    no accounts, no servers we can read, no analytics, and no tracking. We are
-    <strong>technically unable</strong> to read your documents.
+    ValuMinder is a private vault &mdash; documents, photos and videos, voice memos, notes,
+    passwords, and a calendar &mdash; processed <strong>entirely on your device</strong>.
+    There are no accounts, no servers we can read, no analytics, and no tracking. We are
+    <strong>technically unable</strong> to read your content.
   </p>
 
   <h2>What the app does with your information</h2>
   <div class="card">
-    <ul>
-      <li><strong>Documents you add</strong> (scans, photos, PDFs) are read <strong>on your
-        device</strong> to recognise text and extract key dates. This uses Apple's on-device
-        Vision and, on supported devices, Apple's on-device Foundation Models.
-        <strong>Nothing is sent to any AI service.</strong></li>
-      <li>Your documents and extracted details are stored <strong>encrypted on your device</strong>
-        (AES-256). The encryption key is held in the device's Secure Enclave-backed Keychain and
-        protected by Face ID / Touch ID / your passcode.</li>
-      <li><strong>Reminders</strong> are scheduled as <strong>local notifications</strong>. Their
-        text is generic (e.g. &ldquo;A document expires in 14 days&rdquo;) so nothing sensitive
-        shows on your lock screen.</li>
-    </ul>
+  <ul>
+    <li><strong>Everything you add</strong> &mdash; scanned documents, photos, videos, voice
+      memos, notes, passwords, and calendar entries &mdash; is stored <strong>encrypted on
+      your device</strong> (AES-256). The encryption key is held in the device's Secure
+      Enclave-backed Keychain and protected by Face ID, Touch ID or your passcode.</li>
+    <li><strong>Documents you scan</strong> (for the Expires feature) are read
+      <strong>on your device</strong> to recognise text and extract key dates. This uses
+      Apple's on-device Vision and, on supported devices, Apple's on-device Foundation
+      Models. <strong>Nothing is sent to any AI service or server for this.</strong></li>
+    <li><strong>Passwords</strong> are end-to-end local: logins, generated passwords and
+      TOTP codes are encrypted the same way as everything else. There is no AutoFill
+      extension and no iCloud Keychain integration &mdash; your passwords never leave your
+      device, backed up or not.</li>
+    <li><strong>Photo Library access is read, write and delete</strong>: the app reads your
+      library to find documents you may want to import, writes to it when you save an
+      export back to Photos, and can delete an original photo or video after you import it
+      &mdash; only ever the specific item you chose, and only when you ask. It never touches
+      anything else in your library.</li>
+    <li><strong>Reminders</strong> are scheduled as <strong>local notifications</strong>.
+      Their text is generic (for example &ldquo;A document expires in 14 days&rdquo;) so
+      nothing sensitive shows on your lock screen.</li>
+  </ul>
   </div>
 
   <h2>Optional iCloud backup &amp; sync (Plus)</h2>
   <p>
-    If you turn on backup/sync, your documents are uploaded to <strong>your own private iCloud
-    (CloudKit) storage</strong>. Before anything leaves your device it is <strong>encrypted with
-    your key</strong>, so Apple &mdash; and we &mdash; only ever store unreadable ciphertext. The
-    only way to restore on another device is with <strong>your recovery code</strong>, which we
-    never receive. If you don't turn this on, nothing leaves your device.
+    Backup is scoped narrowly: only the documents in the <strong>Expires</strong> feature
+    (passports, ID cards, permits, licences, letters and similar expiring documents) can be
+    backed up, and only if you turn it on. Photos and videos, general documents, voice
+    memos, notes, passwords and your calendar are <strong>always local-only</strong> and are
+    not backed up by any plan, including Plus.
+  </p>
+  <p>
+    If you turn on backup for Expires documents, they are uploaded to <strong>your own
+    private iCloud (CloudKit) storage</strong>. Before anything leaves your device it is
+    <strong>encrypted with your key</strong>, so Apple &mdash; and we &mdash; only ever store
+    unreadable ciphertext. The only way to restore on another device is with <strong>your
+    recovery code</strong>, which we never receive. If you never turn this on, nothing
+    leaves your device. Turning sync back <strong>off</strong> stops future uploads but does
+    not delete what was already uploaded &mdash; see <em>Deleting your data</em> below.
   </p>
 
   <h2>What we never do</h2>
   <ul>
     <li>We never collect, sell, or share your data.</li>
-    <li>We use <strong>no</strong> analytics, crash-reporting, advertising, or tracking SDKs.</li>
+    <li>We use <strong>no</strong> analytics, crash-reporting, advertising or tracking
+      SDKs. The app links only Apple's own frameworks.</li>
     <li>We have no servers that can read your content.</li>
   </ul>
 
+  <h2>Children</h2>
+  <p>
+    ValuMinder is rated 4+ and is not directed at children. It collects no personal data
+    from anyone, of any age.
+  </p>
+
   <h2>Subscriptions</h2>
   <p>
-    ValuMinder Plus is an auto-renewing subscription processed by Apple. We do not receive your
-    payment details.
+    ValuMinder Plus is an auto-renewing subscription processed by Apple. We do not receive
+    your payment details.
   </p>
 
   <h2>Deleting your data</h2>
   <p>
-    Delete a document in the app to remove it from your device (and your iCloud backup if sync is
-    on). Deleting the app removes the local vault. To remove the iCloud backup, turn off sync or
-    delete the app's iCloud data in Settings.
+    Delete a document in the app to remove it from your device, and from your iCloud
+    backup if that document was ever synced. Deleting the app removes the local vault.
+  </p>
+  <p>
+    Turning sync off stops future uploads but does <strong>not</strong> delete Expires
+    documents already backed up to iCloud. To remove those, go to
+    <strong>Settings &rarr; [your name] &rarr; iCloud &rarr; ValuMinder &rarr; Delete Data
+    from iCloud</strong>, or uninstall the app and delete its iCloud data from
+    <strong>Settings &rarr; General &rarr; iPhone Storage</strong>.
+  </p>
+
+  <h2>Your rights</h2>
+  <p>
+    Because your content never reaches us, there is nothing for us to hand over, correct or
+    erase on your behalf &mdash; you hold and delete it yourself, using the steps above.
+    Where data-protection law (such as the UK GDPR or EU GDPR) gives you rights of access,
+    rectification, erasure, portability or objection, they apply to personal data a
+    controller holds about you; we hold none.
   </p>
 
   <h2>Not legal advice</h2>
   <p>
-    ValuMinder is a document organiser and reminder utility. Extracted dates are estimates and
-    may contain errors &mdash; always verify against your original documents and the official
-    the authority that issued the document. ValuMinder does not provide
-    immigration or legal advice.
+    ValuMinder is a document organiser and reminder utility. Extracted dates are estimates
+    and may contain errors &mdash; always verify against your original documents and the
+    authority that issued the document. ValuMinder does not provide immigration or legal
+    advice.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes, the date at the top of this page changes with it. Material
+    changes will also be noted in the app's release notes.
   </p>
 
   <h2>Contact</h2>
   <p>Questions about your privacy? Email <a href="mailto:ForgeLabsSoft@icloud.com">ForgeLabsSoft@icloud.com</a>.</p>
 
-  <footer>© 2026 ForgeLabsSoft. ValuMinder.</footer>
+  <footer>&copy; 2026 ForgeLabsSoft. ValuMinder.</footer>
 </div>
 </body>
 </html>
