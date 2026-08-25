@@ -86,15 +86,15 @@
       from your password every time you unlock, so somebody holding your device without
       your password does not have it. With password + Face ID, both are required.</li>
     <li><strong>One exception, stated plainly:</strong> so the app can show your expiry
-      timeline and send reminders without being unlocked, a small index stays outside
-      that encryption &mdash; the TITLES of your documents, notes and passwords, your
-      folder names, the holder name, the key dates, the username hint you can attach to
-      a login, and any reference number read off a document. It is protected by iOS's own
-      file encryption, tied to your device passcode rather than to your vault password, and
-      it is included in your device's own backup &mdash; which is what lets a new iPhone
-      restored from that backup find your files again. <strong>The files themselves &mdash;
-      every scan, photo, video, recording, note and password &mdash; are always sealed with
-      your key, in your backup as much as on your device.</strong></li>
+      timeline and send reminders without being unlocked, a small index stays outside that
+      encryption &mdash; the <em>dates</em> on your documents, what <em>kind</em> of document
+      each one is, and which vault a row belongs to. Nothing in it names you or names a
+      document. Everything that does &mdash; the titles of your documents, notes and
+      passwords, your folder names, the holder's name, the username hint you can attach to a
+      login, and every reference number read off a document, including passport and
+      national-insurance numbers &mdash; <strong>is sealed with your key like the files
+      are</strong>, so a copy of the app's database taken off the device shows only
+      ciphertext.</li>
     <li><strong>Calendar access is full access, used only for events the app itself
       creates.</strong> When you tap &ldquo;Add to Calendar&rdquo;, ValuMinder writes one
       event &mdash; the document's title and its date, plus the location and what to bring
