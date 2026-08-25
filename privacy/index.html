@@ -78,8 +78,13 @@
   <ul>
     <li><strong>Everything you add</strong> &mdash; scanned documents, photos, videos, voice
       memos, notes, passwords, and calendar entries &mdash; is stored <strong>encrypted on
-      your device</strong> (AES-256). The encryption key is held in the device's Secure
-      Enclave-backed Keychain and protected by Face ID, Touch ID or your passcode.</li>
+      your device</strong> (AES-256). How that key is protected depends on the unlock
+      method you choose. With <strong>device unlock</strong> it is held in the device's
+      Secure Enclave-backed Keychain and released only to Face ID, Touch ID or your
+      passcode.
+      With an <strong>app password</strong> it is not stored at all &mdash; it is derived
+      from your password every time you unlock, so somebody holding your device without
+      your password does not have it. With password + Face ID, both are required.</li>
     <li><strong>One exception, stated plainly:</strong> so the app can show your expiry
       timeline and send reminders without being unlocked, a small index stays outside
       that encryption &mdash; the TITLES of your documents, notes and passwords, your
