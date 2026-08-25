@@ -84,9 +84,11 @@
       timeline and send reminders without being unlocked, a small index stays outside
       that encryption &mdash; the TITLES of your documents, notes and passwords, your
       folder names, the holder name, the key dates, the username hint you can attach to
-      a login, and any reference number read off a document. It never leaves your device
-      except in an encrypted backup, and it is protected by iOS's own file encryption
-      tied to your device passcode &mdash; but not by your vault password.
+      a login, and any reference number read off a document. It is deliberately kept
+      <strong>out of device backups</strong>, so it cannot be copied onto a computer even
+      from an unencrypted backup; if you turn on iCloud backup it travels only inside the
+      same end-to-end encryption as everything else. On the device it is protected by
+      iOS's own file encryption tied to your passcode, rather than by your vault password.
       <strong>The files themselves &mdash; every scan, photo, video, recording, note and
       password &mdash; are always sealed with your key.</strong></li>
     <li><strong>Calendar access is full access, used only for events the app itself
