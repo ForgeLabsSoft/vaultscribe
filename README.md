@@ -1,7 +1,7 @@
 # ValuMinder — public site
 
 The privacy policy, support page and landing for **ValuMinder**, a private,
-on-device vault and expiry reminder for UK documents (iOS).
+on-device vault and expiry reminder for your important documents (iOS).
 
 | Page | URL |
 |---|---|
