@@ -57,7 +57,7 @@
     <div class="badge" aria-hidden="true">&#128274;</div>
     <h1>ValuMinder &mdash; Privacy Policy</h1>
   </header>
-  <p class="updated">Last updated: 25 August 2026</p>
+  <p class="updated">Last updated: 27 August 2026</p>
 
   <p class="lede">
     ValuMinder is a private vault &mdash; documents, photos and videos, voice memos, notes,
@@ -111,8 +111,10 @@
       Models. <strong>Nothing is sent to any AI service or server for this.</strong></li>
     <li><strong>Passwords</strong> are end-to-end local: logins, generated passwords and
       TOTP codes are encrypted the same way as everything else. There is no AutoFill
-      extension and no iCloud Keychain integration &mdash; your passwords never leave your
-      device, backed up or not.</li>
+      extension and no iCloud Keychain integration &mdash; ValuMinder never uploads your
+      passwords anywhere. If your iPhone is part of an iCloud or computer backup, your vault
+      is included in that backup like any other app's data &mdash; as ciphertext that only
+      your unlock method or your recovery code can open.</li>
     <li><strong>Photo Library access is read, write and delete</strong>: the app reads your
       library to find documents you may want to import, writes to it when you save an
       export back to Photos, and can delete an original photo or video after you import it
@@ -129,16 +131,18 @@
     Backup is scoped narrowly: only the documents in the <strong>Expires</strong> feature
     (passports, ID cards, permits, licences, letters and similar expiring documents) can be
     backed up, and only if you turn it on. Photos and videos, general documents, voice
-    memos, notes, passwords and your calendar are <strong>always local-only</strong> and are
-    not backed up by any plan, including Plus.
+    memos, notes, passwords and your calendar are <strong>never uploaded by ValuMinder</strong>
+    on any plan, including Plus. They are still included in your iPhone&rsquo;s own backup, if
+    you use one, as ciphertext &mdash; this section is about what <em>we</em> upload, not about
+    where your data can exist.
   </p>
   <p>
     If you turn on backup for Expires documents, they are uploaded to <strong>your own
     private iCloud (CloudKit) storage</strong>. Before anything leaves your device it is
     <strong>encrypted with your key</strong>, so Apple &mdash; and we &mdash; only ever store
     unreadable ciphertext. The only way to restore on another device is with <strong>your
-    recovery code</strong>, which we never receive. If you never turn this on, nothing
-    leaves your device. Turning sync back <strong>off</strong> stops future uploads but does
+    recovery code</strong>, which we never receive. If you never turn this on, ValuMinder
+    uploads nothing. Turning sync back <strong>off</strong> stops future uploads but does
     not delete what was already uploaded &mdash; see <em>Deleting your data</em> below.
   </p>
 
