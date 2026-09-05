@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ValuMinder — Privacy Policy</title>
-<meta name="description" content="ValuMinder processes your documents entirely on your device. No accounts, no servers we can read, no analytics, no tracking.">
+<meta name="description" content="ValuMinder encrypts your documents on your device with a key only you hold. No accounts, no servers we can read, no analytics, no tracking.">
 <style>
   :root {
     --bg: #f7f8fa; --card: #ffffff; --ink: #1a1d21; --muted: #5a6472;
@@ -57,11 +57,12 @@
     <div class="badge" aria-hidden="true">&#128274;</div>
     <h1>ValuMinder &mdash; Privacy Policy</h1>
   </header>
-  <p class="updated">Last updated: 27 August 2026</p>
+  <p class="updated">Last updated: 5 September 2026</p>
 
   <p class="lede">
     ValuMinder is a private vault &mdash; documents, photos and videos, voice memos, notes,
-    passwords, and a calendar &mdash; processed <strong>entirely on your device</strong>.
+    passwords, and a calendar &mdash; <strong>encrypted on your device</strong> with a key only
+    you hold. Nothing is uploaded anywhere unless you turn on Plus backup.
     There are no accounts, no servers we can read, no analytics, and no tracking. We are
     <strong>technically unable</strong> to read your content.
   </p>
@@ -102,19 +103,23 @@
       if you delete the document. It never reads, changes or deletes anything else in your
       calendar. <strong>That event leaves the vault.</strong> If your default calendar is an
       iCloud, Google or Exchange calendar, the event syncs wherever that calendar syncs,
-      under that provider's protection rather than ours. It is the one thing in the app that
-      travels in readable form, it only ever happens because you asked for it, and you can
-      delete the event in the Calendar app at any time.</li>
+      under that provider's protection rather than ours. It only ever happens because you
+      asked for it, and you can delete the event in the Calendar app at any time.</li>
+    <li><strong>Exporting or sharing</strong> a file takes it out of the vault too. When you
+      share, save to Photos, or build a ProofPack PDF, ValuMinder writes a readable copy for
+      the app you send it to. Those copies live outside the vault and are no longer covered
+      by it.</li>
     <li><strong>Documents you scan</strong> (for the Expires feature) are read
       <strong>on your device</strong> to recognise text and extract key dates. This uses
       Apple's on-device Vision and, on supported devices, Apple's on-device Foundation
       Models. <strong>Nothing is sent to any AI service or server for this.</strong></li>
-    <li><strong>Passwords</strong> are end-to-end local: logins, generated passwords and
-      TOTP codes are encrypted the same way as everything else. There is no AutoFill
-      extension and no iCloud Keychain integration &mdash; ValuMinder never uploads your
-      passwords anywhere. If your iPhone is part of an iCloud or computer backup, your vault
-      is included in that backup like any other app's data &mdash; as ciphertext that only
-      your unlock method or your recovery code can open.</li>
+    <li><strong>Passwords</strong> are encrypted the same way as everything else: logins,
+      generated passwords and TOTP codes are sealed with your vault key. There is no AutoFill
+      extension and no iCloud Keychain integration. <strong>If you turn on Plus backup, your
+      passwords are included in it</strong> &mdash; sealed, so that only your recovery code can
+      open them and neither Apple nor we can read them. If your iPhone is part of an iCloud or
+      computer backup, your vault is included in that backup like any other app's data &mdash;
+      as ciphertext that only your unlock method or your recovery code can open.</li>
     <li><strong>Photo Library access is read, write and delete</strong>: the app reads your
       library to find documents you may want to import, writes to it when you save an
       export back to Photos, and can delete an original photo or video after you import it
@@ -128,19 +133,19 @@
 
   <h2>Optional iCloud backup &amp; sync (Plus)</h2>
   <p>
-    Backup is scoped narrowly: only the documents in the <strong>Expires</strong> feature
-    (passports, ID cards, permits, licences, letters and similar expiring documents) can be
-    backed up, and only if you turn it on. Photos and videos, general documents, voice
-    memos, notes, passwords and your calendar are <strong>never uploaded by ValuMinder</strong>
-    on any plan, including Plus. They are still included in your iPhone&rsquo;s own backup, if
-    you use one, as ciphertext &mdash; this section is about what <em>we</em> upload, not about
-    where your data can exist.
+    If you turn it on, backup covers <strong>your whole main vault</strong>: the documents you
+    track for expiry and the scans they came from, your photos and videos, voice memos,
+    imported files, folders, notes, passwords, and the titles and notes of your calendar
+    entries. It only happens if you turn it on, and only on Plus. Your
+    <strong>decoy vault is never uploaded</strong>, on any plan.
   </p>
   <p>
     If you turn on backup for Expires documents, they are uploaded to <strong>your own
     private iCloud (CloudKit) storage</strong>. Before anything leaves your device it is
-    <strong>encrypted with your key</strong>, so Apple &mdash; and we &mdash; only ever store
-    unreadable ciphertext. The only way to restore on another device is with <strong>your
+    <strong>encrypted with your key</strong>, so neither Apple nor we can read its contents.
+    Alongside the sealed contents, iCloud stores a small amount of unencrypted bookkeeping so
+    the pieces can be put back together &mdash; what kind of record each one is, how many parts
+    it has and how large it is. None of that says what an item contains or what it is called. The only way to restore on another device is with <strong>your
     recovery code</strong>, which we never receive. If you never turn this on, ValuMinder
     uploads nothing. Turning sync back <strong>off</strong> stops future uploads but does
     not delete what was already uploaded &mdash; see <em>Deleting your data</em> below.
